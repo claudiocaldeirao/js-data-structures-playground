@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "node ./app/index.mjs",
-    "eslint": "eslint ./app --fix",
-    "prettier": "prettier ./app --write"
+    "eslint": "eslint ./app",
+    "eslint:fix": "eslint ./app --fix",
+    "prettier": "prettier ./app --check",
+    "prettier:fix": "prettier ./app --write",
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +22,15 @@
     "@eslint/js": "^9.25.1",
     "eslint": "^9.25.1",
     "globals": "^16.0.0",
+    "husk": "^0.5.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "app/**/*": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
