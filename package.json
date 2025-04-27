@@ -4,12 +4,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./app/index.mjs"
+    "start": "node ./app/index.mjs",
+    "eslint": "eslint ./app --fix"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "inquirer": "^12.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0"
   }
 }
