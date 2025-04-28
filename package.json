@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./app/index.mjs",
+    "start": "node --env-file=.env ./app/index.mjs",
     "eslint": "eslint ./app",
     "eslint:fix": "eslint ./app --fix",
     "prettier": "prettier ./app --check",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@eslint/js": "^9.25.1",
     "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
     "globals": "^16.0.0",
     "husk": "^0.5.3",
     "husky": "^9.1.7",
