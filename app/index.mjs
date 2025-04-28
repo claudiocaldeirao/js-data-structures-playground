@@ -1,5 +1,9 @@
 import inquirer from "inquirer";
-import { HashTable, BynaryTree, LinkedList } from "./dataStructures/index.mjs";
+import {
+  HashTable,
+  BynarySearchTree,
+  LinkedList,
+} from "./dataStructures/index.mjs";
 
 const question = [
   {
@@ -24,8 +28,8 @@ const options = {
     hashTable.run();
   },
   bynaryTree: () => {
-    const bynaryTree = new BynaryTree();
-    bynaryTree.run();
+    const bynarySearchTree = new BynarySearchTree();
+    bynarySearchTree.run();
   },
 };
 

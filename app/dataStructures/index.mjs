@@ -1,5 +1,5 @@
-import BynaryTree from "./bynaryTree.mjs";
+import BynarySearchTree from "./bynarySearchTree.mjs";
 import HashTable from "./hashTable.mjs";
 import LinkedList from "./linkedList.mjs";
 
-export { BynaryTree, HashTable, LinkedList };
+export { BynarySearchTree, HashTable, LinkedList };
